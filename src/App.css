@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.product-section,
+.competition-section {
+  background-color: #191423;
+}
+
+.product-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.competition-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.product-container {
+  max-width: 1177px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.product-card {
+  background-color: #362b4f;
+  padding: 16px 26px;
+  border-radius: 16px;
+  max-width: 437px;
+  color: white;
+}
+
+.product-heading {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 59.8px;
+  margin-bottom: 50px !important;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  max-width: 369px;
+  margin: 0 auto;
+}
+
+.grid-small-image {
+  max-width: 100px;
+}
+.grid-large-image {
+  max-width: 203px;
+}
+
+.grid-container {
+  max-width: 675px;
+  min-height: 666px;
+  background-color: #362b4f;
+  border-radius: 16px;
+}
+
+.grid-box {
+  gap: 7px;
+  padding: 26px !important;
+}
+
+.grid-item-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  gap: 4px;
+}
+
+.grid-item-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  gap: 4px;
+}
+
+.grid-item-3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  gap: 4px;
+}
+
+.grid-item-4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  gap: 4px;
+}
+
+.grid-item-5 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  gap: 4px;
+}
+
+.grid-item-6 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  gap: 4px;
+}
+
+@media (max-width: 1199.98px) {
+  .product-card {
+    max-width: unset;
+  }
+
+  .grid-container {
+    max-width: unset;
+    min-height: unset;
+    padding: 26px;
+  }
+
+  .product-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .product-description {
+    max-width: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .product-heading {
+    font-size: 36px;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-heading {
+    margin-bottom: 10px !important;
+  }
+
+  .grid-box {
+    padding: 0px !important;
+  }
+  .grid-item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    gap: 4px;
+  }
+
+  .grid-item-2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    gap: 4px;
+  }
+
+  .grid-item-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    gap: 4px;
+  }
+
+  .grid-item-4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    gap: 4px;
+  }
+
+  .grid-item-5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    gap: 4px;
+  }
+
+  .grid-item-6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    gap: 4px;
+  }
+}
+
+/* ============================================================= */
+.competition-section {
+  padding-top: 143px;
+  padding-bottom: 143px;
+}
+
+.competition-heading {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 59.8px;
+  margin-bottom: 50px !important;
+  color: white;
+}
+
+.competition-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  max-width: 481px;
+  margin: 0 auto;
+}
+
+.competition-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #026070;
+}
+
+.border-xl {
+  border-radius: 12px !important;
+}
+
+.cards-img {
+  width: 320px;
+  height: 555px;
+  object-fit: cover;
+}
+
+.max-w-sm {
+  max-width: 95px !important;
+}
+
+.table-heading {
+  font-size: 12px;
+  line-height: 15.6px;
+  color: #000000;
+  padding: 27px 19px !important;
+  min-width: 95px !important;
+  font-weight: 600;
+}
+
+.custom-table-bg {
+  width: 100%;
+  background: #026070 !important;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+.bg-aqua {
+  background-color: #56e3cb !important;
+}
+
+.border-radius-top {
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+}
+
+.border-radius-bottom {
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+
+.Competition-td {
+  padding: 18px 21px;
+  background-color: #fff;
+  border-top: 0.75px solid #000000;
+  border-bottom: 0.75px solid #000000;
+}
+
+.Competition-td:last-child {
+  background-color: #e8f5e9;
+}
+
+.table-heading {
+  padding: 12px 15px;
+}
+
+table th:first-child,
+table td:first-child {
+  border-left: none;
+}
+
+thead tr th {
+  padding: 12px 15px;
+}
+
+.border-b-none {
+  border-bottom: none !important;
+}
+
+.fee-heading {
+  font-size: 8px;
+  max-width: 64px;
+}
+
+@media (max-width: 1199.98px) {
+  .product-card {
+    max-width: unset;
+  }
+
+  .grid-container {
+    max-width: unset;
+    min-height: unset;
+    padding: 26px;
+  }
+
+  .competition-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .competition-heading {
+    font-size: 36px;
+    margin-bottom: 20px !important;
+  }
+  .competition-description {
+    max-width: none !important;
+  }
+  .pt-32 {
+    padding-top: 32px;
+  }
+}
+
+.px-sm {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.w-100{
+  width: 100% !important;
+}
+.custom-card{
+  padding: 24px ;
+}
