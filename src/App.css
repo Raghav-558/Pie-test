@@ -227,7 +227,7 @@
   line-height: 15.6px;
   color: #000000;
   padding: 27px 19px !important;
-  min-width: 95px !important;
+  width: 95px !important;
   font-weight: 600;
 }
 

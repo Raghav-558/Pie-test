@@ -32,71 +32,69 @@ const Competition = () => {
               customers that are particularly price sensitive.
             </p>
           </div>
-          <div className='col-12 col-lg-6 pt-32'>
-            <div className='d-flex align-items-center justify-content-center sm-py-xl border-xl overflow-hidden w-100'>
-              <div className=''>
-                <div className='table-responsive border-xl'>
-                  <table className='custom-table-bg py-5'>
-                    <thead>
-                      <tr className='text-center'>
-                        <th class=''></th>
-                        <th className='bg-white table-heading border-radius-top'>
-                          Rift
-                        </th>
-                        <th className='bg-white table-heading border-radius-top'>
-                          Taxscout
-                        </th>
-                        <th className='bg-white table-heading border-radius-top'>
-                          Coconut
-                        </th>
-                        <th className='bg-aqua table-heading border-radius-top'>
-                          Pie
-                        </th>
+          <div className='col-12 col-lg-6 pt-32 d-flex border-xl align-items-center justify-content-center overflow-hidden'>
+            <div className='table-responsive overflow-auto align-items-center justify-content-center w-100'>
+              <div className='table-responsive border-xl'>
+                <table className='custom-table-bg py-5'>
+                  <thead>
+                    <tr className='text-center'>
+                      <th class=''></th>
+                      <th className='bg-white table-heading border-radius-top'>
+                        Rift
+                      </th>
+                      <th className='bg-white table-heading border-radius-top'>
+                        Taxscout
+                      </th>
+                      <th className='bg-white table-heading border-radius-top'>
+                        Coconut
+                      </th>
+                      <th className='bg-aqua table-heading border-radius-top'>
+                        Pie
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {COMPETITION_LIST.map((item, i) => (
+                      <tr key={i}>
+                        <td
+                          className={`text-white Competition-td bg-transparent border-b-none ${
+                            i === 3 ? 'max-w-sm' : ''
+                          }`}
+                        >
+                          {item.title}
+                        </td>
+                        <td
+                          className={`bg-white Competition-td border-b-none text-center fee-heading ${
+                            i === 5 ? 'border-radius-bottom ' : ''
+                          } `}
+                        >
+                          {item.rift}
+                        </td>
+                        <td
+                          className={`bg-white Competition-td border-b-none text-center fee-heading ${
+                            i === 5 ? 'border-radius-bottom ' : ''
+                          } `}
+                        >
+                          {item.taxscout}
+                        </td>
+                        <td
+                          className={`bg-white Competition-td border-b-none text-center fee-heading ${
+                            i === 5 ? 'border-radius-bottom ' : ''
+                          }`}
+                        >
+                          {item.coconut}
+                        </td>
+                        <td
+                          className={`bg-aqua Competition-td border-b-none text-center fee-heading ${
+                            i === 5 ? 'border-radius-bottom px-sm' : ''
+                          }`}
+                        >
+                          {item.pie}
+                        </td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      {COMPETITION_LIST.map((item, i) => (
-                        <tr key={i}>
-                          <td
-                            className={`text-white Competition-td bg-transparent border-b-none ${
-                              i === 3 ? 'max-w-sm' : ''
-                            }`}
-                          >
-                            {item.item}
-                          </td>
-                          <td
-                            className={`bg-white Competition-td border-b-none text-center fee-heading ${
-                              i === 5 ? 'border-radius-bottom ' : ''
-                            } `}
-                          >
-                            {item.rift}
-                          </td>
-                          <td
-                            className={`bg-white Competition-td border-b-none text-center fee-heading ${
-                              i === 5 ? 'border-radius-bottom ' : ''
-                            } `}
-                          >
-                            {item.taxscout}
-                          </td>
-                          <td
-                            className={`bg-white Competition-td border-b-none text-center fee-heading ${
-                              i === 5 ? 'border-radius-bottom ' : ''
-                            }`}
-                          >
-                            {item.coconut}
-                          </td>
-                          <td
-                            className={`bg-aqua Competition-td border-b-none text-center fee-heading ${
-                              i === 5 ? 'border-radius-bottom px-sm' : ''
-                            }`}
-                          >
-                            {item.pie}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
