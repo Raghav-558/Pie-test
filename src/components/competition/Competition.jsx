@@ -57,35 +57,35 @@ const Competition = () => {
                     {COMPETITION_LIST.map((item, i) => (
                       <tr key={i}>
                         <td
-                          className={`text-white competition-td bg-transparent border-b-none ${
-                            i === 3 ? 'max-w-sm' : ''
+                          className={`text-white bg-transparen competition-tdt border-b-none ${
+                            i === 3 ? '' : ''
                           }`}
                         >
                           {item.title}
                         </td>
                         <td
-                          className={`bg-white competition-td border-b-none text-center fee-heading ${
+                          className={`bg-white items-heading border-b-none competition-td text-center  ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           } `}
                         >
                           {item.rift}
                         </td>
                         <td
-                          className={`bg-white competition-td border-b-none text-center fee-heading ${
+                          className={`bg-white items-heading border-b-none competition-td text-center  ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           } `}
                         >
                           {item.taxscout}
                         </td>
                         <td
-                          className={`bg-white Competition-td border-b-none text-center fee-heading ${
+                          className={`bg-white items-heading border-b-none competition-td text-center  ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           }`}
                         >
                           {item.coconut}
                         </td>
                         <td
-                          className={`bg-aqua competition-td border-b-none text-center fee-heading ${
+                          className={`bg-aqua items-heading border-b-none competition-td text-center  ${
                             i === 5 ? 'border-radius-bottom px-sm' : ''
                           }`}
                         >
