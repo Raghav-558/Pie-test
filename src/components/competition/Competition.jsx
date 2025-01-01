@@ -3,7 +3,7 @@ import { COMPETITION_LIST } from '../../utils/helper'
 
 const Competition = () => {
   return (
-    <div className='competition-section d-flex justify-content-center align-items-center min-h-screen'>
+    <div className='competition-section min-vh-100 d-flex justify-content-center align-items-center min-h-screen'>
       <div className='competition-container'>
         <div className='row d-flex justify-content-between align-items-center'>
           <div className='col-12 col-lg-6'>
@@ -33,22 +33,22 @@ const Competition = () => {
             </p>
           </div>
           <div className='col-12 col-lg-6 pt-32 d-flex border-xl align-items-center justify-content-center overflow-hidden'>
-            <div className='table-responsive overflow-auto align-items-center justify-content-center w-100'>
+            <div className='overflow-auto w-100'>
               <div className='table-responsive border-xl'>
                 <table className='custom-table-bg py-5'>
                   <thead>
                     <tr className='text-center'>
                       <th></th>
-                      <th className='bg-white table-heading border-radius-top'>
+                      <th className='bg-white table-heading text-black fw- border-radius-top'>
                         Rift
                       </th>
-                      <th className='bg-white table-heading border-radius-top'>
+                      <th className='bg-white table-heading text-black fw- border-radius-top'>
                         Taxscout
                       </th>
-                      <th className='bg-white table-heading border-radius-top'>
+                      <th className='bg-white table-heading text-black fw- border-radius-top'>
                         Coconut
                       </th>
-                      <th className='bg-aqua table-heading border-radius-top'>
+                      <th className='bg-aqua table-heading text-black fw- border-radius-top'>
                         Pie
                       </th>
                     </tr>
@@ -57,36 +57,36 @@ const Competition = () => {
                     {COMPETITION_LIST.map((item, i) => (
                       <tr key={i}>
                         <td
-                          className={`text-white bg-transparent competition-td table-title border-b-none ${
+                          className={`text-white bg-transparent competition-td table-title border-bottom-none ${
                             i === 3 ? '' : ''
                           }`}
                         >
                           {item.title}
                         </td>
                         <td
-                          className={`bg-white items-heading border-b-none competition-td text-center  ${
+                          className={`bg-white items-heading border-bottom-none competition-td text-center  ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           } `}
                         >
                           {item.rift}
                         </td>
                         <td
-                          className={`bg-white items-heading border-b-none competition-td text-center  ${
+                          className={`bg-white items-heading border-bottom-none competition-td text-center  ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           } `}
                         >
                           {item.taxscout}
                         </td>
                         <td
-                          className={`bg-white items-heading border-b-none competition-td text-center  ${
+                          className={`bg-white items-heading border-bottom-none competition-td text-center  ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           }`}
                         >
                           {item.coconut}
                         </td>
                         <td
-                          className={`bg-aqua items-heading border-b-none competition-td text-center  ${
-                            i === 5 ? 'border-radius-bottom px-sm' : ''
+                          className={`bg-aqua items-heading border-bottom-none competition-td text-center  ${
+                            i === 5 ? 'border-radius-bottom px-4px' : ''
                           }`}
                         >
                           {item.pie}

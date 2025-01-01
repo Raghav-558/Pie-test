@@ -14,10 +14,10 @@ import GridTwelve from '../../assets/images/grid-12.webp'
 
 const Product = () => {
   return (
-    <div className='product-section d-flex justify-content-center align-items-center h-100'>
+    <div className='product-section d-flex justify-content-center align-items-center min-vh-100'>
       <div className='product-container'>
         <div className='d-flex flex-column gap-3 flex-xl-row'>
-          <div className='product-card'>
+          <div className='product-card text-white'>
             <h2 className='product-heading'>Product</h2>
             <p className='product-description m-0'>
               Due to the confusing nature of tax, the lack of awareness of the
@@ -44,8 +44,8 @@ const Product = () => {
               cornerstone of our product launch in April 23.
             </p>
           </div>
-          <div className='d-flex grid-container justify-content-center align-items-center w-100 h-100'>
-            <div className='d-grid grid-box h-100'>
+          <div className='w-100 h-100 d-flex grid-container justify-content-center align-items-center'>
+            <div className='d-grid grid-box'>
               <div className='grid-item-1 d-flex'>
                 <img className='grid-small-image' src={GridOne} alt='GridOne' />
                 <img className='grid-large-image' src={GridTwo} alt='GridTwo' />
