@@ -49,7 +49,7 @@
   font-size: 16px;
   line-height: 24px;
   color: white;
-  max-width: 369px;
+  max-width: 385px;
   margin: 0 auto;
 }
 
@@ -146,8 +146,8 @@
   border-collapse: collapse;
 }
 
-.bg-aqua{
-  background-color: #56E3CB !important;
+.bg-aqua {
+  background-color: #56e3cb !important;
 }
 
 .table-heading {
@@ -208,7 +208,14 @@ thead tr th {
   .product-card {
     max-width: unset;
   }
-
+  .product-heading {
+    margin-bottom: 15px !important;
+  }
+  .product-card {
+   
+    padding: 26px;
+   
+  }
   .grid-container {
     max-width: unset;
     min-height: unset;
@@ -254,7 +261,7 @@ thead tr th {
 
   .product-heading {
     font-size: 36px;
-    margin-bottom: 20px !important;
+    margin-bottom: 1m0px !important;
   }
 }
 

@@ -3,7 +3,7 @@ import { COMPETITION_LIST } from '../../utils/helper'
 
 const Competition = () => {
   return (
-    <div className='competition-section d-flex justify-content-center align-items-center'>
+    <div className='competition-section d-flex justify-content-center align-items-center min-h-screen'>
       <div className='competition-container'>
         <div className='row d-flex justify-content-between align-items-center'>
           <div className='col-12 col-lg-6'>
@@ -57,7 +57,7 @@ const Competition = () => {
                     {COMPETITION_LIST.map((item, i) => (
                       <tr key={i}>
                         <td
-                          className={`text-white bg-transparent competition-td text-left border-b-none ${
+                          className={`text-white bg-transparent competition-td table-title border-b-none ${
                             i === 3 ? '' : ''
                           }`}
                         >

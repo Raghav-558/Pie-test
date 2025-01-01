@@ -14,7 +14,7 @@ import GridTwelve from '../../assets/images/grid-12.webp'
 
 const Product = () => {
   return (
-    <div className='product-section d-flex justify-content-center align-items-center'>
+    <div className='product-section d-flex justify-content-center align-items-center h-100'>
       <div className='product-container'>
         <div className='d-flex flex-column gap-3 flex-xl-row'>
           <div className='product-card'>
