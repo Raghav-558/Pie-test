@@ -219,7 +219,7 @@
 }
 
 .max-w-sm {
-  max-width: 95px !important;
+  min-width: 95px !important;
 }
 
 .table-heading {
@@ -252,14 +252,14 @@
   border-bottom-right-radius: 6px !important;
 }
 
-.Competition-td {
+.competition-td {
   padding: 18px 21px;
   background-color: #fff;
   border-top: 0.75px solid #000000;
   border-bottom: 0.75px solid #000000;
 }
 
-.Competition-td:last-child {
+.competition-td:last-child {
   background-color: #e8f5e9;
 }
 
@@ -282,7 +282,7 @@ thead tr th {
 
 .fee-heading {
   font-size: 8px;
-  max-width: 64px;
+  min-width: 64px !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -323,6 +323,7 @@ thead tr th {
 .w-100{
   width: 100% !important;
 }
+
 .custom-card{
-  padding: 24px ;
+  padding: 24px !important;
 }

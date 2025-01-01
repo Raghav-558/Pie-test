@@ -57,21 +57,21 @@ const Competition = () => {
                     {COMPETITION_LIST.map((item, i) => (
                       <tr key={i}>
                         <td
-                          className={`text-white Competition-td bg-transparent border-b-none ${
+                          className={`text-white competition-td bg-transparent border-b-none ${
                             i === 3 ? 'max-w-sm' : ''
                           }`}
                         >
                           {item.title}
                         </td>
                         <td
-                          className={`bg-white Competition-td border-b-none text-center fee-heading ${
+                          className={`bg-white competition-td border-b-none text-center fee-heading ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           } `}
                         >
                           {item.rift}
                         </td>
                         <td
-                          className={`bg-white Competition-td border-b-none text-center fee-heading ${
+                          className={`bg-white competition-td border-b-none text-center fee-heading ${
                             i === 5 ? 'border-radius-bottom ' : ''
                           } `}
                         >
@@ -85,7 +85,7 @@ const Competition = () => {
                           {item.coconut}
                         </td>
                         <td
-                          className={`bg-aqua Competition-td border-b-none text-center fee-heading ${
+                          className={`bg-aqua competition-td border-b-none text-center fee-heading ${
                             i === 5 ? 'border-radius-bottom px-sm' : ''
                           }`}
                         >

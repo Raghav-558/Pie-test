@@ -20,7 +20,7 @@ const Cards = () => {
             >
               <h2 className='text-center fw-bold text-dark'>{obj.title}</h2> 
               <button
-                onClick={() => handleClick(obj.description)}
+                onClick={() => handleClick(obj.title)}
                 className='btn btn-success'
               >
                 Click Here
