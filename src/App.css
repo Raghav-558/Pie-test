@@ -202,12 +202,6 @@
   margin: 0 auto;
 }
 
-.competition-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #026070;
-}
-
 .border-xl {
   border-radius: 12px !important;
 }
@@ -215,11 +209,13 @@
 .cards-img {
   width: 320px;
   height: 555px;
-  object-fit: cover;
+  object-fit: cover !important;
 }
 
-.max-w-sm {
-  min-width: 95px !important;
+.competition-table {
+  background-color: #026070;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .table-heading {
@@ -236,10 +232,6 @@
   background: #026070 !important;
   border-collapse: separate;
   border-spacing: 10px 0;
-}
-
-.bg-aqua {
-  background-color: #56e3cb !important;
 }
 
 .border-radius-top {
@@ -320,10 +312,10 @@ thead tr th {
   padding-right: 0 !important;
 }
 
-.w-100{
+.w-100 {
   width: 100% !important;
 }
 
-.custom-card{
-  padding: 24px !important;
+.max-w-sm {
+  min-width: 95px !important;
 }

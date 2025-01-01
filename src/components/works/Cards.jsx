@@ -16,7 +16,7 @@ const Cards = () => {
           {CARDS_LIST.map((obj, i) => (
             <div
               key={i}
-              className='card custom-card d-flex flex-col justify-content-center align-items-center'
+              className='card p-4 d-flex flex-col justify-content-center align-items-center'
             >
               <h2 className='text-center fw-bold text-dark'>{obj.title}</h2> 
               <button
