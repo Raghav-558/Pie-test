@@ -5,7 +5,7 @@ const Competition = () => {
   return (
     <div className='competition-section d-flex justify-content-center align-items-center'>
       <div className='competition-container'>
-        <div className='row d-flex justify-content-between'>
+        <div className='row d-flex justify-content-between align-items-center'>
           <div className='col-12 col-lg-6'>
             <h1 className='competition-heading'>Competition</h1>
             <p className='m-0 competition-description'>
@@ -38,7 +38,7 @@ const Competition = () => {
                 <table className='custom-table-bg py-5'>
                   <thead>
                     <tr className='text-center'>
-                      <th class=''></th>
+                      <th></th>
                       <th className='bg-white table-heading border-radius-top'>
                         Rift
                       </th>
@@ -57,7 +57,7 @@ const Competition = () => {
                     {COMPETITION_LIST.map((item, i) => (
                       <tr key={i}>
                         <td
-                          className={`text-white bg-transparen competition-tdt border-b-none ${
+                          className={`text-white bg-transparent competition-td text-left border-b-none ${
                             i === 3 ? '' : ''
                           }`}
                         >
